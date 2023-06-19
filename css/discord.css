@@ -1,0 +1,205 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+.discord0 {
+    z-index: 1;
+    height: 576px;
+    width: 1823px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: grow 5s;
+}
+.discord1 {
+    z-index: 2;
+    position: absolute;
+    left: -270px;
+    top: 160px;
+    animation: grow 5s;
+}
+.discord2 {
+    z-index: 2;
+    position: absolute;
+    right: -227px;
+    top: 151px;
+    animation: grow 5s;
+}
+.img-discord img {
+    height: 80px;
+    width: 80px;
+}
+.img-discord {
+    margin: 10px 0px 0px 0px;
+}
+
+.top {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: space-between;
+    position: fixed;
+}
+
+#logo {
+    width: 15%;
+    object-position: right;
+    display: block;
+    margin: 1%;;
+}
+a {
+    color: black;
+    font-size: 160%;
+    margin: 2%;
+    text-decoration: none;
+}
+ul {
+    width: 100%;
+    position: fixed;
+    left: 45%;
+    top: 7%;
+}
+nav {
+    background-color: white;
+}
+.buttonLarge-3z9xOS {
+    border-radius: 28px;
+    font-size: 20px;
+    padding: 16px 32px;
+    height: 20%;
+}
+
+.top2 {
+    display: flex;
+    background-color: #34363c;
+    margin: 2%;
+    padding: 8%;
+    justify-content: space-between;
+}
+img#background {
+    padding: 30%;
+}
+
+.hello {
+    color: white;
+    margin: 2%;
+    background-position: center;
+    display: flex;
+    font-size: 200%;
+}
+#gifhello {
+    width: 50%;
+    display: flex;
+}
+.top3 {
+    display: flex;
+    background-color: white;
+}
+.vocalimg {
+    display: flex;
+    flex-direction: column;
+    width: 120%;
+}
+img#vocal {
+    width: 100%;
+    margin: 9%;
+}
+
+.vocaltxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    width: 100%;
+}
+
+.top4 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(88 101 242);
+}
+img#com {
+    width: 150%; 
+}
+.imgcom {
+    display: flex;
+    flex-direction: column;
+    width: 140%;
+    align-items: stretch;
+}
+.txtcom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    width: 100%;
+}
+
+.top10 {
+    display: flex;
+    background-color: white;
+}
+.log{
+    display: flex;
+}
+.qrcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+}
+
+.top11 {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(88 101 242);
+}
+img#store {
+    width: 100%; 
+}
+.imgstore {
+    display: flex;
+    flex-direction: column;
+    width: 140%;
+    align-items: stretch;
+}
+.txtsotre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+    width: 90%;
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 300%;
+}
+
+h2 {
+    width: 300%;
+}
+
+p {
+    font-size: 180%;
+}
+
+.container {
+    display: flex;
+    opacity: 0;
+    animation: fade-in 5s forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
