@@ -48,10 +48,11 @@ nav ul li a{
     display: flex;
     height: 88%;
     align-items: center;
+    justify-content: space-around;
 }
 
 .col{
-    flex-basis: 50%;
+    flex-basis: 40%;
 }
 
 h1{

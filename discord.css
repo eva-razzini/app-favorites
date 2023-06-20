@@ -6,7 +6,7 @@ body {
 }
 
 .navbar{
-    background-color: black;
+    background-color: #34363c;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +31,7 @@ body {
 }
 
 .nav-menu{
-    background-color: black;
+    background-color: #34363c;
     position: absolute;
     top: 70px;
     left: 0;
@@ -42,7 +42,7 @@ body {
     color: white;
     text-decoration: none;
     line-height: 70px;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .nav-menu a:hover, .show:hover{
@@ -55,7 +55,10 @@ body {
     }
     .nav-menu{
         display: initial;
+        margin-right: 2%;
         position: static;
+        display: flex;
+        justify-content: flex-end;
     }
     .nav-item{
         display: inline-block;
@@ -64,13 +67,72 @@ body {
     }
     .dropdown{
         position: absolute;
-        background-color: black;
+        background-color: #7289da;
         top: 70px;
         right: 0;
         padding-right: 40px;
         width: max-content;
     }
 
+}
+.lowheader h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    margin-top: -70px;
+    font-size: 50px;
+    z-index: 2;
+    animation: grow 3s;
+}
+.lowheader p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    margin-top: 30px;
+    z-index: 2;
+    margin-bottom: 180px;
+    animation: grow 4s;
+}
+.lowheader {
+    position: relative;
+}
+
+/* Images Low Header*/
+.discord0 {
+    z-index: 1;
+    height: 576px;
+    width: 1823px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation: grow 5s;
+}
+.discord1 {
+    z-index: 2;
+    position: absolute;
+    left: -270px;
+    top: 160px;
+    animation: grow 5s;
+}
+.discord2 {
+    z-index: 2;
+    position: absolute;
+    right: -227px;
+    top: 151px;
+    animation: grow 5s;
+}
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 .top {
     display: flex;
@@ -87,10 +149,7 @@ body {
     margin: 1%;;
 }
 a {
-    color: black;
-    font-size: 160%;
-    margin: 2%;
-    text-decoration: none;
+    padding-left: 2%;
 }
 ul {
     display: flex;
@@ -113,9 +172,9 @@ nav {
 
 .top2 {
     display: flex;
-    background-color: #34363c;
-    margin: 2%;
-    padding: 8%;
+    background-color: #7289da;
+    margin: 1%;
+    padding: 7%;
     justify-content: space-between;
 }
 img#background {
@@ -127,7 +186,7 @@ img#background {
     margin: 2%;
     background-position: center;
     display: flex;
-    font-size: 200%;
+    font-size: 100%;
 }
 #gifhello {
     width: 50%;
@@ -158,7 +217,7 @@ img#vocal {
 .top4 {
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgb(88 101 242);
+    background-color: #7289da;
 }
 img#com {
     width: 150%; 
@@ -194,7 +253,7 @@ img#com {
 .top11 {
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgb(88 101 242);
+    background-color: #7289da;
 }
 img#store {
     width: 100%; 
