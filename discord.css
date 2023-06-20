@@ -2,41 +2,76 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
-    background-repeat: no-repeat;
-    min-height: 100vh;
 
 }
-.discord0 {
-    z-index: 1;
-    height: 576px;
-    width: 1823px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    animation: grow 5s;
-}
-.discord1 {
-    z-index: 2;
-    position: absolute;
-    left: -270px;
-    top: 160px;
-    animation: grow 5s;
-}
-.discord2 {
-    z-index: 2;
-    position: absolute;
-    right: -227px;
-    top: 151px;
-    animation: grow 5s;
-}
-.img-discord img {
-    height: 80px;
-    width: 80px;
-}
-.img-discord {
-    margin: 10px 0px 0px 0px;
+
+.navbar{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
+.logo{
+    color: white;
+}
+
+.icon{
+    fill: white;
+    cursor: pointer;
+}
+
+.navbar input, .nav-menu, .dropdown{
+    display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+.nav-menu{
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+
+.nav-item a, .drop-item a, .show{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 1.2rem;
+}
+
+.nav-menu a:hover, .show:hover{
+    color: #7289da;
+}
+
+@media screen and (min-width: 768px){
+    .icon{
+        display: none;
+    }
+    .nav-menu{
+        display: initial;
+        position: static;
+    }
+    .nav-item{
+        display: inline-block;
+        margin-left: 20px;
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        background-color: black;
+        top: 70px;
+        right: 0;
+        padding-right: 40px;
+        width: max-content;
+    }
+
+}
 .top {
     display: flex;
     width: 100%;
@@ -58,10 +93,13 @@ a {
     text-decoration: none;
 }
 ul {
-    width: 100%;
+    display: flex;
+    width: 50%;
     position: fixed;
-    left: 45%;
-    top: 7%;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
 }
 nav {
     background-color: white;
